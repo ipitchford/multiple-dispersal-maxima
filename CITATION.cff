@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Arbitrarily many population maxima under uniform global dispersal"
+type: software
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+doi: 10.5281/zenodo.23687852
+date-released: 2026-10-27
+repository-code: "https://github.com/ipitchford/multiple-dispersal-maxima"
+url: "https://evidencepress.org/releases/multiple-dispersal-maxima/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23687852
+    description: "Version DOI (1.0.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23687851
+    description: "Concept DOI (all versions)"
+keywords:
+  - nonlocal dispersal
+  - total population
+  - logistic equation
+  - spatial heterogeneity
+  - population maxima
+  - metapopulation
+abstract: "Answers the question of Bai and Li (arXiv:2108.01826) for the uniform nonlocal dispersal logistic model: total equilibrium population can have arbitrarily many strict local maxima as a function of dispersal rate. Smooth increasing resources converging in every finite L^p to a constant give at least N maxima; an exact three-level example has a certified minimum at d=3; two levels always give one peak; a three-level example with contrast about 14.17 is certified exactly and by interval traps. The peaks are real but tiny; the result is qualitative. Unrefereed candidate; internal AI-assisted review only. Text and data CC0-1.0; code MIT."
+references:
+  - type: article
+    title: "Effects of nonlocal dispersal strategies and heterogeneous environment on total population"
+    authors:
+      - family-names: Bai
+        given-names: Xueli
+      - family-names: Li
+        given-names: Fang
+    year: 2021
+    doi: 10.48550/arXiv.2108.01826

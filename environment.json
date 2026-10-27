@@ -1,0 +1,9 @@
+{
+  "python": "3.11.14",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "matplotlib": "3.11.2",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "runner": "uv run python3 -I (uv 0.10.4)",
+  "date": "2026-10-27"
+}

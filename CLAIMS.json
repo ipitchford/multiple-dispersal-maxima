@@ -1,0 +1,63 @@
+{
+ "schemaVersion": "1.0",
+ "release": "multiple-dispersal-maxima",
+ "version": "1.0.0-candidate",
+ "doi": "10.5281/zenodo.23687852",
+ "conceptDoi": "10.5281/zenodo.23687851",
+ "creator": "Anonymous",
+ "status": "unrefereed candidate",
+ "model": "On (0,1): d(M-theta)+theta(m-theta)=0 with M=int_0^1 theta (uniform nonlocal dispersal, Bai-Li 2021 eq. (1.11)); M_m(d) is the total equilibrium population as a function of the dispersal rate d>0.",
+ "claims": [
+  {
+   "id": "C1",
+   "kind": "theorem",
+   "location": "Theorem 1",
+   "statement": "For every a>0 and N>=1 there are m_j in C^infinity([0,1]), m_j>0, m_j'>0, int m_j=a, with d->M_{m_j}(d) having at least N distinct strict local maxima; m_j->a in L^p for every finite p but not uniformly; contrast exceeds 2^(N-1) for large j.",
+   "evidence": "written proof"
+  },
+  {
+   "id": "C2",
+   "kind": "theorem",
+   "location": "Theorem 2",
+   "statement": "The increasing three-level step function with values 1/20, 25/12, 329/10 on measures 2405/3504, 5/16, 1/876 has M(3)=1, M'(3)=0, M''(3)=6042635/1975192401>0 and at least two strict local maxima; every rearrangement has the same curve; every positive smooth strictly increasing resource L^1-close to it with values in a fixed compact subinterval of (0,infinity) has a nondegenerate local minimum near d=3 and at least two distinct strict local maxima (the exact identities are not claimed for these approximations).",
+   "evidence": "written proof; exact rational certificate (audit_meanfield.py, contrast_witness.py)"
+  },
+  {
+   "id": "C3",
+   "kind": "theorem",
+   "location": "Theorem 3",
+   "statement": "For a two-level resource a<b, sgn M'(d)=sgn(a+b-2d); the unique maximum is at d=(a+b)/2 with value (pa+qb+sqrt(pa^2+qb^2))/2. Three levels are minimal for multiple maxima among finitely-valued resources.",
+   "evidence": "written proof"
+  },
+  {
+   "id": "C4",
+   "kind": "proposition",
+   "location": "Proposition 4",
+   "statement": "A three-level resource with contrast 14173319160000/999994960001 (about 14.1734) has M(d0)=1, M'(d0)=0, M''(d0)>0 at d0=76/25 and at least two strict local maxima; traps (d0-1e-4, d0-1e-5, d0) and (d0, d0+1e-2, 31/10) certified. Quantitatively fragile: left maximum within 1e-4 of d0 and about 1e-32 high.",
+   "evidence": "written proof; exact rational certificate (contrast_witness.py); rational square-root enclosures (interval_traps.py)"
+  },
+  {
+   "id": "C5",
+   "kind": "corollary",
+   "location": "Corollary 9",
+   "statement": "Every critical dispersal rate of a positive bounded resource lies strictly between its essential infimum and supremum.",
+   "evidence": "written proof"
+  },
+  {
+   "id": "N1",
+   "kind": "numerical-evidence",
+   "location": "Section 8",
+   "statement": "Multistart search (2000 starts) found best three-level contrast 14.41; rare-patch limit threshold R* ~ 14.173. Evidence only; the optimal threshold kappa_3 in [1.618, 14.1734] is open.",
+   "evidence": "contrast_search.py / contrast_search.json"
+  }
+ ],
+ "notClaimed": [
+  "Equal-height global maxima",
+  "L-infinity closeness to a constant",
+  "A contrast bound independent of N",
+  "Infinitely many maxima for one resource",
+  "Arbitrary mixing kernels",
+  "Historical priority beyond the bounded search",
+  "Ecologically visible effect sizes"
+ ]
+}

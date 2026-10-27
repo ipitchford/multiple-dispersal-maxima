@@ -1,0 +1,370 @@
+{
+  "date": "2026-10-27",
+  "model": "d*(M-theta)+theta*(m-theta)=0; M=E(theta)",
+  "normalisation": "Unit habitat measure; local quadratic coefficient 1.",
+  "finite_instances": [
+    {
+      "v": 30,
+      "d": "3",
+      "M": "1",
+      "M_prime": "0",
+      "theta": [
+        "4/5",
+        "4/3",
+        "30"
+      ],
+      "resource": [
+        "1/20",
+        "25/12",
+        "329/10"
+      ],
+      "probabilities": [
+        "2405/3504",
+        "5/16",
+        "1/876"
+      ],
+      "probability_common_scaling": {
+        "denominator": 3504,
+        "integer_numerators": [
+          2405,
+          1095,
+          4
+        ]
+      },
+      "mean_resource": "347/480",
+      "A": [
+        "91/20",
+        "43/12",
+        "301/10"
+      ],
+      "theta_prime": [
+        "4/91",
+        "-4/43",
+        "-290/301"
+      ],
+      "D": "2/7",
+      "curvature_expectation": "-6042635/13826346807",
+      "M_second": "6042635/1975192401",
+      "mixing_matrix_P_ij_pj": [
+        [
+          "2405/3504",
+          "5/16",
+          "1/876"
+        ],
+        [
+          "2405/3504",
+          "5/16",
+          "1/876"
+        ],
+        [
+          "2405/3504",
+          "5/16",
+          "1/876"
+        ]
+      ],
+      "mixing_matrix_sha256_canonical_order": "f3516a83c2e13a4d2035689798df6d66dea645610215a8fd29f0d6af0fba71af",
+      "mixing_matrix_sha256_transpose": "74f02fddc441cf6cb81f64dcefb386e73d5ed0656ed9d7ccaa484f99245b031d",
+      "mixing_matrix_rank": 1,
+      "mixing_matrix_trace": "1",
+      "mixing_matrix_determinant": "0",
+      "mixing_matrix_characteristic_polynomial": "(1)*lambda^3 + (-1)*lambda^2",
+      "mixing_matrix_eigenvalues": [
+        "1",
+        "0",
+        "0"
+      ],
+      "generator": [
+        [
+          "-1099/1168",
+          "15/16",
+          "1/292"
+        ],
+        [
+          "2405/1168",
+          "-33/16",
+          "1/292"
+        ],
+        [
+          "2405/1168",
+          "15/16",
+          "-875/292"
+        ]
+      ],
+      "generator_rank": 2,
+      "generator_trace": "-6",
+      "generator_determinant": "0",
+      "generator_characteristic_polynomial": "(1)*lambda^3 + (6)*lambda^2 + (9)*lambda^1",
+      "generator_eigenvalues": [
+        "0",
+        "-3",
+        "-3"
+      ],
+      "generator_stationary_probability": [
+        "2405/3504",
+        "5/16",
+        "1/876"
+      ]
+    },
+    {
+      "v": 50,
+      "d": "3",
+      "M": "1",
+      "M_prime": "0",
+      "theta": [
+        "4/5",
+        "4/3",
+        "50"
+      ],
+      "resource": [
+        "1/20",
+        "25/12",
+        "2647/50"
+      ],
+      "probabilities": [
+        "4258345/6232656",
+        "1169385/3699056",
+        "72587/113745972"
+      ],
+      "probability_common_scaling": {
+        "denominator": 454983888,
+        "integer_numerators": [
+          310859185,
+          143834355,
+          290348
+        ]
+      },
+      "mean_resource": "1840789/2533600",
+      "A": [
+        "91/20",
+        "43/12",
+        "2503/50"
+      ],
+      "theta_prime": [
+        "4/91",
+        "-4/43",
+        "-2450/2503"
+      ],
+      "D": "902/3167",
+      "curvature_expectation": "-3428551838255/6200024110300943",
+      "M_second": "3428551838255/882921021075379",
+      "mixing_matrix_P_ij_pj": [
+        [
+          "4258345/6232656",
+          "1169385/3699056",
+          "72587/113745972"
+        ],
+        [
+          "4258345/6232656",
+          "1169385/3699056",
+          "72587/113745972"
+        ],
+        [
+          "4258345/6232656",
+          "1169385/3699056",
+          "72587/113745972"
+        ]
+      ],
+      "mixing_matrix_sha256_canonical_order": "1a3626ab90142ed92567db7f4fa64b0fa147a4dbb4fdda1613d7816732e97d13",
+      "mixing_matrix_sha256_transpose": "b0f7325480e134f6e42dbf023ea0c41bddb97a35f4ed72a736ac3ca59fdf1168",
+      "mixing_matrix_rank": 1,
+      "mixing_matrix_trace": "1",
+      "mixing_matrix_determinant": "0",
+      "mixing_matrix_characteristic_polynomial": "(1)*lambda^3 + (-1)*lambda^2",
+      "mixing_matrix_eigenvalues": [
+        "1",
+        "0",
+        "0"
+      ],
+      "generator": [
+        [
+          "-1974311/2077552",
+          "3508155/3699056",
+          "72587/37915324"
+        ],
+        [
+          "4258345/2077552",
+          "-7589013/3699056",
+          "72587/37915324"
+        ],
+        [
+          "4258345/2077552",
+          "3508155/3699056",
+          "-113673385/37915324"
+        ]
+      ],
+      "generator_rank": 2,
+      "generator_trace": "-6",
+      "generator_determinant": "0",
+      "generator_characteristic_polynomial": "(1)*lambda^3 + (6)*lambda^2 + (9)*lambda^1",
+      "generator_eigenvalues": [
+        "0",
+        "-3",
+        "-3"
+      ],
+      "generator_stationary_probability": [
+        "4258345/6232656",
+        "1169385/3699056",
+        "72587/113745972"
+      ]
+    },
+    {
+      "v": 100,
+      "d": "3",
+      "M": "1",
+      "M_prime": "0",
+      "theta": [
+        "4/5",
+        "4/3",
+        "100"
+      ],
+      "resource": [
+        "1/20",
+        "25/12",
+        "10297/100"
+      ],
+      "probabilities": [
+        "2516085/3694208",
+        "702405/2204608",
+        "41441/136685696"
+      ],
+      "probability_common_scaling": {
+        "denominator": 136685696,
+        "integer_numerators": [
+          93095145,
+          43549110,
+          41441
+        ]
+      },
+      "mean_resource": "1085977/1489600",
+      "A": [
+        "91/20",
+        "43/12",
+        "10003/100"
+      ],
+      "theta_prime": [
+        "4/91",
+        "-4/43",
+        "-9900/10003"
+      ],
+      "D": "1852/6517",
+      "curvature_expectation": "-18416996060265/29109438906938299",
+      "M_second": "18416996060265/4136157806939522",
+      "mixing_matrix_P_ij_pj": [
+        [
+          "2516085/3694208",
+          "702405/2204608",
+          "41441/136685696"
+        ],
+        [
+          "2516085/3694208",
+          "702405/2204608",
+          "41441/136685696"
+        ],
+        [
+          "2516085/3694208",
+          "702405/2204608",
+          "41441/136685696"
+        ]
+      ],
+      "mixing_matrix_sha256_canonical_order": "246ebd0b29f813fb6eecd11c26e1bdc0859075cd2cef5643e1b9842fcc8a8384",
+      "mixing_matrix_sha256_transpose": "9f8b7a20326a0f9c2cf95a2b8442d74dcab37b513832c8614880654fc5297445",
+      "mixing_matrix_rank": 1,
+      "mixing_matrix_trace": "1",
+      "mixing_matrix_determinant": "0",
+      "mixing_matrix_characteristic_polynomial": "(1)*lambda^3 + (-1)*lambda^2",
+      "mixing_matrix_eigenvalues": [
+        "1",
+        "0",
+        "0"
+      ],
+      "generator": [
+        [
+          "-3534369/3694208",
+          "2107215/2204608",
+          "124323/136685696"
+        ],
+        [
+          "7548255/3694208",
+          "-4506609/2204608",
+          "124323/136685696"
+        ],
+        [
+          "7548255/3694208",
+          "2107215/2204608",
+          "-409932765/136685696"
+        ]
+      ],
+      "generator_rank": 2,
+      "generator_trace": "-6",
+      "generator_determinant": "0",
+      "generator_characteristic_polynomial": "(1)*lambda^3 + (6)*lambda^2 + (9)*lambda^1",
+      "generator_eigenvalues": [
+        "0",
+        "-3",
+        "-3"
+      ],
+      "generator_stationary_probability": [
+        "2516085/3694208",
+        "702405/2204608",
+        "41441/136685696"
+      ]
+    }
+  ],
+  "kernel_fingerprint": {
+    "a": "1",
+    "r": "2",
+    "g_coefficients_degrees_0_through_12": [
+      "0",
+      "1/2",
+      "-3/8",
+      "1/8",
+      "-1/128",
+      "-1/128",
+      "1/1024",
+      "1/1024",
+      "-5/32768",
+      "-5/32768",
+      "7/262144",
+      "7/262144",
+      "-21/4194304"
+    ],
+    "g_coefficients_common_scaling": {
+      "denominator": 4194304,
+      "integer_numerators": [
+        0,
+        2097152,
+        -1572864,
+        524288,
+        -32768,
+        -32768,
+        4096,
+        4096,
+        -640,
+        -640,
+        112,
+        112,
+        -21
+      ]
+    },
+    "t_coefficients_degrees_0_through_12": [
+      "2",
+      "-1/2",
+      "1/8",
+      "0",
+      "-1/128",
+      "0",
+      "1/1024",
+      "0",
+      "-5/32768",
+      "0",
+      "7/262144",
+      "0",
+      "-21/4194304"
+    ],
+    "g_polynomial": "a*g^2+(d^2+(3*a-r)*d+a*r)*g-d*(r-a)^2",
+    "t_polynomial": "t^2+(d-r)*t-a*d",
+    "initial_branch": "g(0)=0, t(0)=r",
+    "coefficient_recurrence": "r*t_n=-t_(n-1)-sum_(i=1)^(n-1)t_i*t_(n-i)+a*1_(n=1)",
+    "interpretation": "Elementary algebraic response kernel, not claimed as a new named function."
+  }
+}

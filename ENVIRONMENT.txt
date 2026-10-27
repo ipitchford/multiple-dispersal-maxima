@@ -1,0 +1,7 @@
+Local clean replay (27 October 2026): macOS 27 (arm64), uv 0.10.4, CPython 3.11.14.
+Standard-library scripts: uv run python3 -I <script>.py --out <dir>
+Numerical scripts: uv run --no-project --with numpy==2.4.6 --with scipy==1.17.1 --with matplotlib==3.11.2 python3 -I <script>.py --out <dir>
+  (equivalently: uv run --script <script>.py, using the PEP 723 header; or pip install -r requirements.txt)
+CI: GitHub Actions ubuntu-latest, CPython 3.11, pip install -r requirements.txt (.github/workflows/replay.yml).
+LaTeX: pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026), three passes.
+Figures are not byte-reproducible across platforms; their plotted maxima are compared numerically.

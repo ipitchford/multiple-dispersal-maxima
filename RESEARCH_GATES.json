@@ -1,0 +1,202 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 27 October 2026 for release 1.0.0-candidate from the dated bounded novelty audit of 20 October 2026 (NOVELTY_AUDIT.md, target.yaml), the round-1 domain review and the final re-review/proof audit/outside-model audit of 27 October 2026. It documents the scrutiny performed, not historical priority. No search was rerun at release preparation.",
+ "contributionMap": [
+  {
+   "claim": "For every a>0 and N, smooth strictly increasing resources with mean a converging to a in every finite L^p whose population curve has at least N distinct strict local maxima (answers the question of Bai-Li 2021, Section 5).",
+   "unit": "statement",
+   "paperLocation": "Theorem 1",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"nonlocal dispersal\" \"arbitrarily many\"; \"arbitrarily many\" \"dispersal\" \"maxima\"; \"uniform dispersal\" \"population\" \"maxima\"; \"uniform nonlocal\" \"multiple maxima\"; \"global panmixia\" \"population\" maximum; \"complete graph\" \"logistic\" \"multiple maxima\"",
+     "corpus": "public web search (two engines), arXiv, primary journal pages, author pages, OEIS, Evidence Press index (bounded novelty audit, NOVELTY_AUDIT.md)"
+    },
+    {
+     "date": "2026-10-20",
+     "query": "exact Liang-Zhang title; \"identical migration\" \"multiple\"/\"unimodal\"/\"unique\"; \"Some Progress on Single Species Models\" nonlocal pdf; Bai Li Shi nonlocal total population monotonicity",
+     "corpus": "public web search (two engines), arXiv, primary journal pages, author pages, OEIS, Evidence Press index (bounded novelty audit, NOVELTY_AUDIT.md)"
+    },
+    {
+     "date": "2026-10-27",
+     "query": "review-requested positioning: Arditi-Lobry-Sari 2015 and 2018 (owner-supplied full texts), Gao-Lou 2022, Elbetch et al. 2022, Segura-Marva-Franco 2026, Bravo de la Parra 2026, Liang-Lou 2012; Crossref/DataCite records for all 15 DOIs",
+     "corpus": "Crossref and DataCite APIs, doi.org, owner-supplied full texts"
+    }
+   ],
+   "closestPriorWork": "Bai-Li 2021 (question; golden-ratio unimodality, Thm 1.5); Liang-Lou 2012 (multiple maxima for local diffusion, different operator); Liang-Zhang 2021 (equal-patch identical migration; abstract only)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "First-variation transfer of separated algebraic response kernels g_r of rare rich patches to strict population traps.",
+   "unit": "method",
+   "paperLocation": "Lemmas 10-12; Section 5",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"total biomass\" \"linear response\"; \"logistic\" \"response kernel\" dispersal; \"total population\" \"rare\" \"resource\" \"dispersal\"; \"population\" \"d^2+(3a\"; \"total biomass\" \"positive mixtures\"",
+     "corpus": "public web search (two engines), arXiv, primary journal pages, author pages, OEIS, Evidence Press index (bounded novelty audit, NOVELTY_AUDIT.md)"
+    }
+   ],
+   "closestPriorWork": "Bai-Li-Zhou 2023 (resource concentration for optimisation, credited); standard implicit-function first variation",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Exact three-level witness with certified nondegenerate minimum at d=3, and low-contrast witness (about 14.17).",
+   "unit": "statement",
+   "paperLocation": "Theorem 2; Proposition 4",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"6042635\" \"1975192401\"; \"2405/3504\" \"population\"; logistic patch model total population multiple maxima complete mixing; total biomass diffusion rate three patches unimodal",
+     "corpus": "public web search (two engines), arXiv, primary journal pages, author pages, OEIS, Evidence Press index (bounded novelty audit, NOVELTY_AUDIT.md)"
+    }
+   ],
+   "closestPriorWork": "No literal match for the rational instances",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Two-level resources are unimodal with explicit maximum; three levels minimal.",
+   "unit": "statement",
+   "paperLocation": "Theorem 3",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"6042635\" \"1975192401\"; \"2405/3504\" \"population\"; logistic patch model total population multiple maxima complete mixing; total biomass diffusion rate three patches unimodal",
+     "corpus": "public web search (two engines), arXiv, primary journal pages, author pages, OEIS, Evidence Press index (bounded novelty audit, NOVELTY_AUDIT.md)"
+    },
+    {
+     "date": "2026-10-27",
+     "query": "review-requested positioning: Arditi-Lobry-Sari 2015 and 2018 (owner-supplied full texts), Gao-Lou 2022, Elbetch et al. 2022, Segura-Marva-Franco 2026, Bravo de la Parra 2026, Liang-Lou 2012; Crossref/DataCite records for all 15 DOIs",
+     "corpus": "Crossref and DataCite APIs, doi.org, owner-supplied full texts"
+    }
+   ],
+   "closestPriorWork": "Gao-Lou 2022 general two-patch classification; Arditi-Lobry-Sari 2015/2018",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "Scalar closure and pairwise derivative identity for uniform mixing.",
+   "unit": "method",
+   "paperLocation": "Section 3; eq. (16)",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"nonlocal dispersal\" \"arbitrarily many\"; \"arbitrarily many\" \"dispersal\" \"maxima\"; \"uniform dispersal\" \"population\" \"maxima\"; \"uniform nonlocal\" \"multiple maxima\"; \"global panmixia\" \"population\" maximum; \"complete graph\" \"logistic\" \"multiple maxima\"",
+     "corpus": "public web search (two engines), arXiv, primary journal pages, author pages, OEIS, Evidence Press index (bounded novelty audit, NOVELTY_AUDIT.md)"
+    }
+   ],
+   "closestPriorWork": "Standard mean-field reduction; Bai-Li 2021",
+   "verdict": "known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Bai and Li, arXiv:2108.01826v1 (2021), doi:10.48550/arXiv.2108.01826",
+   "usedFor": "Model (1.11), Theorem 1.5, the open question (Section 5, p.20)",
+   "readWhat": "Full primary PDF",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://arxiv.org/abs/2108.01826; manuscript Sections 1-2"
+  },
+  {
+   "citation": "Arditi, Lobry and Sari, Theor. Popul. Biol. 106 (2015), doi:10.1016/j.tpb.2015.10.001",
+   "usedFor": "Two-patch total-population curves; n>2 patches as a challenge",
+   "readWhat": "Full text supplied by the owner (not redistributed)",
+   "date": "2026-10-27",
+   "evidenceLocator": "manuscript Section 7"
+  },
+  {
+   "citation": "Arditi, Lobry and Sari, Theor. Popul. Biol. 120 (2018), doi:10.1016/j.tpb.2017.12.006",
+   "usedFor": "Asymmetric two-patch case, Prop. 2",
+   "readWhat": "Full text supplied by the owner (not redistributed)",
+   "date": "2026-10-27",
+   "evidenceLocator": "manuscript Section 7"
+  },
+  {
+   "citation": "Bai, Li and Zhou, Calc. Var. PDE 62 (2023), doi:10.1007/s00526-023-02509-3",
+   "usedFor": "Resource concentration methodology",
+   "readWhat": "Full arXiv:2208.14335 preprint, Theorems 1.2-1.3, Section 4.2",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://arxiv.org/abs/2208.14335"
+  },
+  {
+   "citation": "Elbetch, Benzekri, Massart and Sari (2022), doi:10.18273/revint.v40n1-2022002",
+   "usedFor": "Multi-patch responses with general migration",
+   "readWhat": "Full arXiv:2103.13144v3 HTML",
+   "date": "2026-10-20",
+   "evidenceLocator": "manuscript Section 7"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Liang-Zhang 2021 read only as an abstract; its equal-patch model contains our rational examples.",
+   "closingQuestion": "Does the full text discuss nonunimodality or multiple stationary migration rates?",
+   "triedOrSearched": "Publisher full HTML paywalled; author and institutional routes searched 20 October 2026.",
+   "estimatedCost": "minutes with legitimate access",
+   "decision": "OPEN",
+   "cheap": true,
+   "reasonOpen": "No authorised full-text access.",
+   "whyNotClosedNow": "Bypassing the paywall is not permitted; disclosed as a priority caveat in the paper and on the page."
+  },
+  {
+   "limitation": "Bai-Li-Shi 2024 survey read only as abstract and two-page preview.",
+   "closingQuestion": "Does its new monotonicity result bear on multiple maxima?",
+   "triedOrSearched": "Journal endpoints unavailable; independent retrieval exposed two pages only.",
+   "estimatedCost": "minutes with legitimate access",
+   "decision": "OPEN",
+   "cheap": true,
+   "reasonOpen": "Full text unavailable.",
+   "whyNotClosedNow": "No authorised access route; disclosed as a priority caveat."
+  },
+  {
+   "limitation": "Optimal three-level contrast kappa_3 in [1.618, 14.1734].",
+   "closingQuestion": "Can kappa_3 = R* be proved?",
+   "triedOrSearched": "Numerical multistart search (best 14.41) and rare-patch limit R*~14.173; no proof.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research; open problem in Section 8."
+  },
+  {
+   "limitation": "Peaks are tiny; non-negligible relative depth under bounded contrast unknown.",
+   "closingQuestion": "Can 5% relative depth occur under bounded contrast?",
+   "triedOrSearched": "Effect sizes reported (Table 1).",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research; Section 8."
+  },
+  {
+   "limitation": "Whether N maxima force growing contrast; other kernels; non-complete patch graphs.",
+   "closingQuestion": "Is there a bound N(kappa)?",
+   "triedOrSearched": "Construction uses contrast above 2^(N-1).",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research; Section 8."
+  },
+  {
+   "limitation": "Unrefereed; no formalisation.",
+   "closingQuestion": "Can the exact certificates be formalised cheaply?",
+   "triedOrSearched": "Not attempted.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Out of scope for this release."
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the editor, 27 October 2026",
+  "date": "2026-10-27",
+  "proposals": [
+   "Lower-contrast three-level witness",
+   "Interval-certified traps independent of M''",
+   "Effect-size table",
+   "Ecological reading"
+  ],
+  "actions": [
+   "Proposition 4 (contrast 14.1734) added",
+   "interval_traps.py added in final fixes",
+   "Table 1 added",
+   "Section 6 added"
+  ]
+ }
+}

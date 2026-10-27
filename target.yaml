@@ -1,0 +1,137 @@
+target_id: uniform-global-logistic-arbitrary-population-maxima
+search_date: 2026-10-20
+intended_contribution_unit: theorem
+claim:
+  exact_statement: |
+    On (0,1), let theta solve d*(M-theta)+theta*(m-theta)=0,
+    M=int_0^1 theta, with d>0 and m bounded away from zero.
+    For every a>0 and every integer N>=1 there is a sequence of
+    m_j in C-infinity([0,1]) with m_j>0, m_j'(x)>0, int m_j=a,
+    and m_j -> a in every fixed finite Lp (1<=p<infinity), such
+    that d -> M_(m_j)(d) has at least N distinct strict local maxima
+    for every j. Before smoothing, N+1 resource levels suffice.
+    There is an exact three-level resource with a nondegenerate
+    minimum at d=3, M=1; every positive two-level resource is unimodal.
+  exclusions:
+    - Multiple maxima means distinct local maxima; equal-height global maxima are not asserted.
+    - No L-infinity convergence to a constant is asserted.
+    - No contrast bound independent of N is asserted.
+    - No single positive bounded resource with infinitely many critical rates is asserted.
+    - No claim that N+1 levels are necessary for N>2.
+    - No claim about arbitrary mixing kernels or independent quadratic competition coefficients.
+    - No novelty claim for the scalar quadratic formula, rank-one mixing, or resource concentration itself.
+source:
+  originating_reference: "X. Bai and F. Li (2021), Effects of nonlocal dispersal strategies and heterogeneous environment on total population; Eq. (1.11), Theorem 1.5, Section 5 p.20"
+  url: "https://arxiv.org/abs/2108.01826"
+  version: "2108.01826v1, 4 August 2021; full primary preprint inspected"
+  novelty_status: "No matching arbitrary-N finite-Lp theorem found in the bounded search; important adjacent full texts remain unavailable."
+normalisation:
+  indices: "Resource levels sorted increasingly; p_i are habitat fractions."
+  scaling: "Habitat measure 1, quadratic competition coefficient 1. M_(c*m)(d)=c*M_m(d/c)."
+  basis_order: "Density variables theta_i; total biomass is sum p_i*theta_i."
+  symmetries:
+    - "Measure-preserving rearrangements of m leave M(d) unchanged."
+    - "Simultaneous relabelling of resource values and probabilities."
+    - "Finite density-to-abundance transformation x_i=p_i*theta_i."
+sequences:
+  - name: "Main exact equilibrium density vector"
+    exact_values: ["4/5", "4/3", "30"]
+    natural_scalings: ["Multiply by 15: 12,20,450"]
+  - name: "Main exact probabilities"
+    exact_values: ["2405/3504", "1095/3504", "4/3504"]
+    natural_scalings: ["Multiply by 3504: 2405,1095,4"]
+  - name: "g_r(d) Taylor coefficients at a=1,r=2; degrees 0 through 12"
+    exact_values: ["0", "1/2", "-3/8", "1/8", "-1/128", "-1/128", "1/1024", "1/1024", "-5/32768", "-5/32768", "7/262144", "7/262144", "-21/4194304"]
+    natural_scalings:
+      - "Underlying even square-root coefficients reduce to alternating Catalan numbers; not a new sequence."
+generating_functions:
+  - name: "Algebraic rare-resource response kernel"
+    expression: "g_r(d)=d*(t_r(d)-a)^2/(a*t_r(d)); t_r(d)=(r-d+sqrt((r-d)^2+4*a*d))/2"
+    variables: [d, r, a]
+    minimal_polynomial: "a*g^2+(d^2+(3*a-r)*d+a*r)*g-d*(r-a)^2=0"
+    branch: "g(0)=0 and g(d)>0 for d>0, r>a>0"
+    denominator_support: "The closed expression has denominator a*t; its primitive algebraic equation is polynomial."
+    coefficient_recurrence: "r*t_n=-t_(n-1)-sum_(i=1)^(n-1)t_i*t_(n-i)+a*1_(n=1), t_0=r; g_n=t_n+t_(n-1)/a for n>=2"
+matrices:
+  - name: "Rank-one mixing matrix for v=30; generator is d*(P-I)"
+    entries:
+      - ["2405/3504", "1095/3504", "4/3504"]
+      - ["2405/3504", "1095/3504", "4/3504"]
+      - ["2405/3504", "1095/3504", "4/3504"]
+finite_fingerprints:
+  generator_script: "resource_fingerprints.py"
+  output: "resource_fingerprints.json"
+  instances:
+    - v: 30
+      d: "3"
+      M: "1"
+      resource: ["1/20", "25/12", "329/10"]
+      probabilities: ["2405/3504", "5/16", "1/876"]
+      mean_resource: "347/480"
+      M_prime: "0"
+      M_second: "6042635/1975192401"
+    - v: 50
+      d: "3"
+      M: "1"
+      resource: ["1/20", "25/12", "2647/50"]
+      probabilities: ["4258345/6232656", "1169385/3699056", "72587/113745972"]
+      mean_resource: "1840789/2533600"
+      M_prime: "0"
+      M_second: "3428551838255/882921021075379"
+    - v: 100
+      d: "3"
+      M: "1"
+      resource: ["1/20", "25/12", "10297/100"]
+      probabilities: ["2516085/3694208", "702405/2204608", "41441/136685696"]
+      mean_resource: "1085977/1489600"
+      M_prime: "0"
+      M_second: "18416996060265/4136157806939522"
+aliases:
+  analysis:
+    - "Uniform nonlocal dispersal logistic equation"
+    - "Mean-field logistic equilibrium"
+    - "Global mixing reaction equation"
+    - "Positive algebraic response kernel mixtures"
+  probability:
+    - "Global panmixia; identical migration; island migration"
+    - "Resource probability law; rare-atom perturbation"
+    - "Rank-one reset Markov generator"
+  combinatorics:
+    - "Complete graph dispersal with finitely many resource classes"
+    - "Equitable reduction of repeated identical patch classes"
+    - "Catalan square-root Taylor coefficients (routine, not a novelty claim)"
+  mathematical_physics:
+    - "Globally coupled logistic units"
+    - "Rank-one mean-field reaction and diffusion"
+    - "Separation of relaxation scales; algebraic susceptibility"
+  statistics_optimisation_ml:
+    - "Total biomass versus migration intensity"
+    - "Multimodality of positive mixtures"
+    - "Fixed-environment dispersal optimization; local optima"
+known_invariants:
+  closure: "M=E[(m-d+sqrt((m-d)^2+4*d*M))/2]"
+  branch_denominator: "D=1-d*E[1/A]=E[theta^2/A]/M>0; A=theta+d*M/theta"
+  resource_excess: "M-E[m]=d*(M*E[1/theta]-1)>0 for nonconstant positive resources"
+  endpoints: "M(0+)=M(infinity)=E[m]"
+  mixing: "P^2=P, rank(P)=1, trace(P)=1, row sums 1, stationary law p"
+  eigenvalues: "P: 1,0,0; d*(P-I): 0,-d,-d"
+  response_expansion: "M_mu_epsilon(d)-E_mu_epsilon[m]=epsilon*sum_i w_i*g_(r_i)(d)+O(epsilon^2)"
+  scale_separation:
+    - "R^(-2)*g_R(d) -> 0 at each fixed d"
+    - "R^(-2)*g_R(s*R) -> s*(1-s)/a for 0<s<1"
+    - "R^(-2)*g_R(R) -> 0"
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora:
+    - "Two web search engines, exact formula and natural-language queries"
+    - "arXiv primary papers"
+    - "Primary journal HTML and abstracts"
+    - "Author-posted full texts and institutional pages"
+    - "EvidencePress public index"
+    - "OEIS for the routine square-root coefficient alias"
+  unavailable_full_text:
+    - "Liang and Zhang (2021), DOI 10.3934/dcdsb.2020280: abstract/intro inspected; full HTML paywalled."
+    - "Gao and Lou (2022), DOI 10.1016/j.tpb.2022.05.003: primary abstract inspected."
+    - "Bai, Li and Shi (2024), DOI 10.4208/jms.v57n3.24.04: abstract and two-page preview only."
+    - "Chinese thesis on population versus nonlocal dispersal rate: secondary abstract found; primary thesis unverified."
+  external_contacts: "None; no author enquiries or messages authorised or sent."

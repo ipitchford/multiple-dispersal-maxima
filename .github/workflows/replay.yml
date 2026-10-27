@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check SHA256SUMS
+        run: sha256sum -c SHA256SUMS
+      - name: Exact certificates (standard library, assertions on, so no -O)
+        run: |
+          for s in audit_meanfield contrast_witness resource_fingerprints interval_traps; do
+            python -B -I $s.py --out "$RUNNER_TEMP/out" > /dev/null
+          done
+          for f in contrast_witness.json meanfield_audit_result.json resource_fingerprints.json; do
+            cmp "$RUNNER_TEMP/out/$f" "$f"
+          done
+          cmp "$RUNNER_TEMP/out/interval_traps.json" interval_traps.json
+      - name: Install pinned packages
+        run: python -m pip install -r requirements.txt
+      - name: Numerical scripts
+        run: |
+          python -B -I plot_population.py --out "$RUNNER_TEMP/num" > /dev/null
+          python -B -I contrast_search.py --out "$RUNNER_TEMP/num" > /dev/null
+          python -B -I compare_numeric.py "$RUNNER_TEMP/num/three_level_peaks.json" three_level_peaks.json
+          python -B -I compare_numeric.py "$RUNNER_TEMP/num/contrast_search.json" contrast_search.json
+      - name: Semantic negative controls
+        run: python -B -I negative_controls.py
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

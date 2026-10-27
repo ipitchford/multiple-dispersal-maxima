@@ -1,0 +1,22 @@
+{
+  "method": "brentq on central-difference M'(d); numerical illustration only",
+  "first_maximum": {
+    "d": 1.9892070510214725,
+    "M": 1.0007559115507279
+  },
+  "certified_minimum": {
+    "d": 3,
+    "M": 1
+  },
+  "second_maximum": {
+    "d": 15.077130315985226,
+    "M": 1.0529826138038383
+  },
+  "relative_depth_first_peak_over_minimum": 0.0007559115507278502,
+  "versions": {
+    "python": "3.11.14",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  }
+}

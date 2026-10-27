@@ -1,0 +1,112 @@
+{
+  "title": "Arbitrarily many population maxima under uniform global dispersal",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> Individuals leave their location at rate d and resettle anywhere in the habitat with equal probability. Bai and Li (arXiv:2108.01826) proved that the total equilibrium population has a single peak in d when habitat quality varies by less than a factor of about 1.618, and asked whether several peaks are possible. This package answers yes. For every budget and every N there are smooth increasing resources, converging to a constant in every finite L<sup>p</sup>, whose population curve has at least N strict local maxima: a tiny patch of very rich habitat adds a population bump at a dispersal rate comparable to its richness. An exact three-level example has a certified minimum at d = 3; two resource levels always give a single peak; and a three-level example with contrast about 14.17 is certified exactly and by two interval traps.</p><p><strong>Effect sizes:</strong> the peaks are real but tiny. In the 14.17 example the left maximum lies within 10<sup>-4</sup> of d<sub>0</sub>, is about 10<sup>-32</sup> high, and vanishes under tiny parameter changes. The result is qualitative.</p><p><strong>Priority caveat:</strong> Liang and Zhang (2021) and Bai, Li and Shi (2024) were read only as abstracts; the former's equal-patch model contains our rational examples.</p><p>The archive contains the 16-page manuscript (PDF and LaTeX), exact standard-library certificates with receipts, numerical scripts with pinned dependencies, semantic negative controls, CI and SHA-256 sums. Assurance: written proofs; exact rational and interval certificates; internal AI-assisted review only (not peer review, independent reproduction or formal verification). Creator: Anonymous. Text and data CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.0.0-candidate",
+  "publication_date": "2026-10-27",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "nonlocal dispersal",
+    "total population",
+    "logistic equation",
+    "spatial heterogeneity",
+    "population maxima",
+    "metapopulation",
+    "dispersal rate"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/multiple-dispersal-maxima/tree/v1.0.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/multiple-dispersal-maxima/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1016/j.tpb.2015.10.001",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.tpb.2017.12.006",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.48550/arXiv.2108.01826",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.4208/jms.v57n3.24.04",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s00526-023-02509-3",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.3390/math14193624",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s00285-015-0879-y",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.18273/revint.v40n1-2022002",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1137/0132052",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.tpb.2022.05.003",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.3934/dcdsb.2012.17.2771",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.3934/dcdsb.2020280",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.jde.2005.05.010",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.tpb.2010.08.006",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.jtbi.2025.112331",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Code (all .py files and the CI workflow) is MIT; prose, manuscript, figures and data are CC0-1.0. Version DOI 10.5281/zenodo.23687852; concept DOI 10.5281/zenodo.23687851."
+}

@@ -1,0 +1,38 @@
+{
+  "d0": "76/25",
+  "M_at_d0": "1 (exact; see contrast_witness.py)",
+  "sqrt_scale_digits": 80,
+  "signs_of_M_minus_1": {
+    "d0-1e-4": {
+      "sign": -1,
+      "closure_F_d_1_enclosure": [
+        "-3.041453e-30",
+        "-3.041453e-30"
+      ]
+    },
+    "d0-1e-5": {
+      "sign": 1,
+      "closure_F_d_1_enclosure": [
+        "8.993577e-33",
+        "8.993577e-33"
+      ]
+    },
+    "d0+1e-2": {
+      "sign": 1,
+      "closure_F_d_1_enclosure": [
+        "3.498694e-24",
+        "3.498694e-24"
+      ]
+    },
+    "31/10": {
+      "sign": -1,
+      "closure_F_d_1_enclosure": [
+        "-1.588728e-22",
+        "-1.588728e-22"
+      ]
+    }
+  },
+  "left_trap": "(d0-1e-4, d0-1e-5, d0): M(d0-1e-5) > 1 = M(d0) > M(d0-1e-4)",
+  "right_trap": "(d0, d0+1e-2, 31/10): M(d0+1e-2) > 1 = M(d0) > M(31/10)",
+  "status": "certified by rational square-root enclosures"
+}
