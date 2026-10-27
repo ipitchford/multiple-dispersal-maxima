@@ -5,4 +5,4 @@ Numerical scripts: uv run --no-project --with numpy==2.4.6 --with scipy==1.17.1 
 CI: GitHub Actions ubuntu-latest, CPython 3.11, pip install -r requirements.txt (.github/workflows/replay.yml).
 LaTeX: pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026), three passes.
 Figures are not byte-reproducible across platforms; their plotted maxima are compared numerically.
-contrast_search part 1 (multistart SLSQP) is platform-sensitive: 14.41 on macOS arm64; no successful start on Linux x86-64 CI. R* agrees.
+contrast_search part 1 (multistart SLSQP) is platform-sensitive: 14.41 on macOS arm64; no successful start and 14.1745 in two Linux x86-64 CI runs. R* agrees.

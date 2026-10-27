@@ -37,4 +37,4 @@ The PDF was rebuilt with pdflatex (three passes). There were no undefined refere
 
 ## Found during publication CI
 
-17. **Platform sensitivity of the search** (GitHub Actions, Linux x86-64). With the same pinned versions, the multistart part of `contrast_search.py` found no successful SLSQP start on Linux (best contrast `inf`). It found 14.41 on macOS arm64. R* agreed. The code-availability paragraph now says so. CI checks the search with `check_search.py`, which requires R* to match and flags any contrast below 14.17. The search is evidence only and no proof depends on it.
+17. **Platform sensitivity of the search** (GitHub Actions, Linux x86-64). With the same pinned versions, the multistart part of `contrast_search.py` gave different results on different runners: no successful SLSQP start (best contrast `inf`) in one Linux run, 14.1745 in a second Linux run, and 14.41 on macOS arm64. None was below the certified 14.1734. R* agreed every time. The code-availability paragraph now says so. CI checks the search with `check_search.py`, which requires R* to match and flags any contrast below 14.17. The search is evidence only and no proof depends on it.
