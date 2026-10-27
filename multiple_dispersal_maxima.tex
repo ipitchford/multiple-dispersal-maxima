@@ -1062,7 +1062,10 @@ dependencies inline (PEP~723) and in \path{requirements.txt}; run them with
 matplotlib==3.11.2 python3 -I}. All were rerun from a clean copy under
 Python~3.11 with these versions, which are recorded in
 \path{environment.json}. Figures are not byte-reproducible across
-platforms. The proofs use strict inequalities and exact identities and do
+platforms. The multistart search of Section~\ref{sec:open} is also
+platform-sensitive: its reported best contrast was obtained on macOS
+(arm64), while a Linux (x86-64) run with the same pinned versions found no
+successful start; the rare-patch threshold \(R^*\) agrees across platforms. The proofs use strict inequalities and exact identities and do
 not depend on plotting resolution.
 
 \begin{thebibliography}{99}

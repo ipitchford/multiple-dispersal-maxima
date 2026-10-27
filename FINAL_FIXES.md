@@ -34,3 +34,7 @@ The PDF was rebuilt with pdflatex (three passes). There were no undefined refere
 - `contrast_search.py` also through `uv run --script`.
 
 `contrast_witness.json`, `meanfield_audit_result.json`, `resource_fingerprints.json` and `three_level_peaks.json` were byte-identical to the receipts. The script-mode and `--with` search outputs were identical.
+
+## Found during publication CI
+
+17. **Platform sensitivity of the search** (GitHub Actions, Linux x86-64). With the same pinned versions, the multistart part of `contrast_search.py` found no successful SLSQP start on Linux (best contrast `inf`). It found 14.41 on macOS arm64. R* agreed. The code-availability paragraph now says so. CI checks the search with `check_search.py`, which requires R* to match and flags any contrast below 14.17. The search is evidence only and no proof depends on it.

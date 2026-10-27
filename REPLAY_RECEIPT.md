@@ -13,4 +13,4 @@ Environment: see [ENVIRONMENT.txt](ENVIRONMENT.txt). Every run started from a fr
 
 Key certified values: M''(3) = 6042635/1975192401 (Theorem 2); M''(d0) ≈ 1.0797588e-21 > 0 exactly (Proposition 4); contrast 14173319160000/999994960001 ≈ 14.1733906; trap signs M(d0−1e−4) < 1, M(d0−1e−5) > 1, M(d0+1e−2) > 1, M(3.1) < 1.
 
-Figures (PDF/PNG) are not byte-reproducible across platforms. Their plotted maxima are recorded in `three_level_peaks.json`.
+Figures (PDF/PNG) are not byte-reproducible across platforms. Their plotted maxima are recorded in `three_level_peaks.json`. The multistart part of `contrast_search.py` is platform-sensitive: on Linux x86-64 (GitHub Actions, same pins) it found no successful start, so CI checks only R* and flags any contrast below 14.17 (`check_search.py`).

@@ -30,7 +30,7 @@ jobs:
           python -B -I plot_population.py --out "$RUNNER_TEMP/num" > /dev/null
           python -B -I contrast_search.py --out "$RUNNER_TEMP/num" > /dev/null
           python -B -I compare_numeric.py "$RUNNER_TEMP/num/three_level_peaks.json" three_level_peaks.json
-          python -B -I compare_numeric.py "$RUNNER_TEMP/num/contrast_search.json" contrast_search.json
+          python -B -I check_search.py "$RUNNER_TEMP/num/contrast_search.json" contrast_search.json
       - name: Semantic negative controls
         run: python -B -I negative_controls.py
       - name: Working tree unchanged

@@ -25,7 +25,7 @@ Object: the positive equilibrium θ of d(M − θ) + θ(m − θ) = 0 on (0,1), 
 
 - Exact certificates: [audit_meanfield.py](audit_meanfield.py) → [meanfield_audit_result.json](meanfield_audit_result.json); [contrast_witness.py](contrast_witness.py) → [contrast_witness.json](contrast_witness.json); [interval_traps.py](interval_traps.py) → [interval_traps.json](interval_traps.json); [resource_fingerprints.py](resource_fingerprints.py) → [resource_fingerprints.json](resource_fingerprints.json). These use the standard library and `assert`, so do not use -O.
 - Numerical: [plot_population.py](plot_population.py) → figures and [three_level_peaks.json](three_level_peaks.json); [contrast_search.py](contrast_search.py) → [contrast_search.json](contrast_search.json). Pinned dependencies are in [requirements.txt](requirements.txt) and in PEP 723 headers.
-- [negative_controls.py](negative_controls.py) runs 20 controls. [compare_numeric.py](compare_numeric.py) compares numerical receipts. CI: [.github/workflows/replay.yml](.github/workflows/replay.yml). Records: [REPLAY_RECEIPT.md](REPLAY_RECEIPT.md), [ENVIRONMENT.txt](ENVIRONMENT.txt), [environment.json](environment.json). Integrity: [SHA256SUMS](SHA256SUMS).
+- [negative_controls.py](negative_controls.py) runs 20 controls. [compare_numeric.py](compare_numeric.py) compares numerical receipts; [check_search.py](check_search.py) checks the platform-sensitive search. CI: [.github/workflows/replay.yml](.github/workflows/replay.yml). Records: [REPLAY_RECEIPT.md](REPLAY_RECEIPT.md), [ENVIRONMENT.txt](ENVIRONMENT.txt), [environment.json](environment.json). Integrity: [SHA256SUMS](SHA256SUMS).
 
 ## Trust boundary
 
